@@ -1,0 +1,85 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ ul, ol {
+ 	list-style: none;
+ }
+ a, img {
+	display: block;
+ }
+ a {
+ 	text-decoration: none;
+ }
+ /* 布局的样式 */
+ #closure {
+ 	width: 680px;
+ 	height: 453px;
+ 	margin: 50px auto;
+ 	position: relative;
+ }
+ #closure ul li {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ }
+ #closure ul li.current {
+	z-index: 1;
+ }
+ #closure #arrow a {
+	width: 30px;
+	height: 60px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .5);
+	line-height: 60px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	font-size: 30px;
+	font-family: simsun;
+	text-align: center;
+	border-radius: 2px;
+ }
+ #closure #arrow {
+ 	display: none;
+ }
+ #closure #arrow #clickLeft {
+ 	left: 5px;
+ }
+ #closure #arrow #clickRight {
+ 	right: 5px;
+ }
+
+ #closure ol {
+ 	position: absolute;
+ 	bottom: 10px;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	z-index: 2;
+ }
+ #closure ol li {
+ 	float: left;
+ 	width: 25px;
+ 	height: 25px;
+ 	line-height: 25px;
+ 	text-align: center;;
+ 	background-color: rgba(255, 255, 255, .6);
+ 	border-radius: 50%;
+ 	margin-left: 5px;
+ 	cursor: pointer;
+ 	// 禁止文字被鼠标选中 
+	moz-user-select: -moz-none; 
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; 
+	-webkit-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+ }
+ #closure ol li.active {
+ 	color: #fff;
+ 	background-color: skyblue;
+ }
