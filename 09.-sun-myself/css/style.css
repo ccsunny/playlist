@@ -1,0 +1,80 @@
+.all {
+    width: 1200px;
+    height: 500px;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+.all img {
+    width: 1200px;
+    height: 500px;
+}
+.screen {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+}
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8400px;
+}
+.all ol {
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    line-height: 20px;
+    text-align: center;
+    transform: translateX(50%);
+}
+.all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.all ol li.current {
+    background: yellow;
+}
+#arr {
+    display: none;
+    z-index: 1000;
+}
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#arr #right {
+    right: 5px;
+    left: auto;
+}
